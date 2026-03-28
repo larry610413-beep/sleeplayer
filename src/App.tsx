@@ -562,18 +562,6 @@ export default function App() {
     setEditingId(null);
   };
 
-  const toggleFullscreen = () => {
-    if (!document.fullscreenElement) {
-      document.documentElement.requestFullscreen().catch((err) => {
-        console.error(`Error attempting to enable fullscreen: ${err.message}`);
-      });
-    } else {
-      if (document.exitFullscreen) {
-        document.exitFullscreen();
-      }
-    }
-  };
-
   return (
     <div className="min-h-screen bg-neutral-900 flex flex-col items-center justify-center font-sans text-neutral-200">
       {/* Night Mode Overlay */}
@@ -818,14 +806,6 @@ export default function App() {
         {/* Alarm List & Settings */}
         <div className="px-3 pt-3 pb-10 bg-neutral-800 flex-1 overflow-y-auto">
           <form onSubmit={(e) => { e.preventDefault(); handleAddSchedule(); }} className="flex items-center gap-2 w-full mb-3">
-            <button 
-              type="button"
-              onClick={() => toggleFullscreen()}
-              title="切換全螢幕"
-              className="flex items-center justify-center bg-neutral-900 w-10 h-10 rounded border border-neutral-700 flex-shrink-0 hover:bg-neutral-800 transition-colors cursor-pointer"
-            >
-              <Maximize className="w-5 h-5 text-neutral-400" />
-            </button>
             <input 
               type="text" 
               inputMode="numeric" 
