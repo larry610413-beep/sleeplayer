@@ -1,16 +1,11 @@
 {
-  "short_name": "VideoAlarm",
-  "name": "Universal Video Alarm Clock",
+  "short_name": "sleeplayer",
+  "name": "sleeplayer",
   "icons": [
     {
-      "src": "icon.png",
-      "type": "image/png",
-      "sizes": "192x192"
-    },
-    {
-      "src": "icon.png",
-      "type": "image/png",
-      "sizes": "512x512"
+      "src": "./icon.png",
+      "sizes": "any 192x192 512x512",
+      "purpose": "any maskable"
     }
   ],
   "start_url": ".",
