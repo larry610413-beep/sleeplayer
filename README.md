@@ -32,3 +32,26 @@ A versatile web application designed to function as a video/audio player alarm c
 ## License
 
 Apache-2.0
+
+## Getting Started
+
+### Installation & Run Locally
+
+1. Install dependencies:
+   ```bash
+   npm install
+   ```
+2. Start the development server:
+   ```bash
+   npm run dev
+   ```
+3. Open the provided local URL in your browser.
+
+### Deployment
+
+This project is configured to be automatically deployed to GitHub Pages.
+1. Push your code to the `main` or `master` branch on GitHub.
+2. The GitHub Action (configured in `.github/workflows/deploy.yml`) will automatically build and deploy the app.
+3. Make sure to enable GitHub Pages in your repository settings:
+   - Go to **Settings** -> **Pages**
+   - Under **Build and deployment**, select **GitHub Actions** as the source.
